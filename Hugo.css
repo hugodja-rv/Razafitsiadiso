@@ -5,19 +5,19 @@
 }
 
 :root {
-    /* Couleurs masculines extraites de la photo - tons verts olive et gris */
-    --primary: #585c1d;           /* Vert olive foncé (feuilles) */
-    --primary-dark: #3d4014;      /* Vert olive très foncé */
-    --primary-light: #97aa17;     /* Vert citron */
-    --secondary: #747b83;         /* Gris veste */
-    --secondary-dark: #51565b;    /* Gris foncé */
-    --secondary-light: #cad0cc;   /* Gris clair */
-    --accent: #c8c46d;            /* Beige doré (lumière naturelle) */
-    --accent-light: #e6e2a0;      /* Beige clair */
-    --dark: #1c1c12;              /* Très foncé (ombres) */
-    --darker: #0f0f0a;            /* Presque noir */
-    --light: #f5f5f0;             /* Blanc cassé naturel */
-    --gray: #8b9080;              /* Gris vert */
+
+    --primary: #585c1d;           
+    --primary-dark: #3d4014;     
+    --primary-light: #97aa17;   
+    --secondary: #747b83;    
+    --secondary-dark: #51565b;    
+    --secondary-light: #cad0cc;   
+    --accent: #c8c46d;           
+    --accent-light: #e6e2a0;     
+    --dark: #1c1c12;            
+    --darker: #0f0f0a;            
+    --light: #f5f5f0;            
+    --gray: #8b9080;             
     --card-bg: rgba(28, 28, 18, 0.8);
 }
 
@@ -182,14 +182,13 @@ body {
     border-color: var(--primary-light);
 }
 
-/* Photo de profil ajustée - buste uniquement, plus petite */
 .profile-img {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    height: 450px; /* Hauteur fixe pour contrôler l'affichage */
+    height: 450px;
     overflow: hidden;
 }
 
@@ -218,15 +217,15 @@ body {
     z-index: 2;
     pointer-events: none;
     top: 40px;
-    animation: rotate 20s linear infinite;
+    animation: rotate 35s linear infinite;
 }
 
 .profile-img img {
     width: 320px;
-    height: 400px; /* Hauteur réduite */
+    height: 400px;
     object-fit: cover;
-    object-position: center 20%; /* Position vers le haut pour montrer le buste */
-    border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%; /* Forme organique */
+    object-position: center 20%; 
+    border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
     position: relative;
     z-index: 1;
     border: 4px solid rgba(255, 255, 255, 0.1);
